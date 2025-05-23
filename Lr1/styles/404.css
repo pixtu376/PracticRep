@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cat-error{
+    position: relative;
+    height: 100svh;
+    background-color: #050505;
+    overflow: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ddd;
+}
+
+.image-404 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: 85vh; /* Очень большой кот */
+    max-height: 90%;
+    z-index: 2;
+    animation: catAnim 1.5s ease forwards;
+}
+
+.image-404 img{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+@keyframes catAnim {
+    0% {
+        transform: translate(-50%, 50%);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
+
+.okak{
+    position: absolute;
+    bottom: 15%;
+    left: 47%;
+    transform: translateX(-50%);
+    font-weight: 900;
+    font-size: 4rem; /* Уменьшенный размер */
+    z-index: 3;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    white-space: nowrap;
+    color: white;
+}
+
+.error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 45vw;
+    font-weight: 900;
+    transform: translate(-50%, 800px);
+    animation: errorAnim 1.5s ease forwards;
+    z-index: 1;
+    opacity: 0.5;
+    color: #222;
+}
+
+@keyframes errorAnim {
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
