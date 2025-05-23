@@ -11,7 +11,6 @@ http
 		} else if (request.url === '/styles/style.css') {
 			filePath = 'styles/style.css'
 		} else if (request.url === '/scripts/script.js') {
-			// Исправлено scrypts → scripts
 			filePath = 'scripts/script.js'
 		} else {
 			filePath = 'pages/404.html'
